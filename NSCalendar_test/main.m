@@ -16,6 +16,7 @@ int main(int argc, const char * argv[]) {
         NSDate *date = [dateFormatter dateFromString:@"22 Nov 1969 08:15:00 Z"];
         NSCalendar *calendar = [NSCalendar currentCalendar];
         
+        [calendar setTimeZone:[NSTimeZone timeZoneWithName: @"America/New_York"]];
         NSLog(@"date = %@", date);
         NSLog(@"calendar = %@", calendar);
         
